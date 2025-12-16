@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Sampah - Layanan</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-recycle"></i>
+                    <span>Bank Sampah</span>
+                </a>
+                
+                <button class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Beranda</a></li>
+                    <li class="nav-item"><a href="layanan.html" class="nav-link active"><i class="fas fa-concierge-bell"></i> Layanan</a></li>
+                    <li class="nav-item"><a href="kategori.html" class="nav-link"><i class="fas fa-list"></i> Kategori Sampah</a></li>
+                    <li class="nav-item"><a href="harga.html" class="nav-link"><i class="fas fa-tags"></i> Daftar Harga</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1>Layanan Bank Sampah</h1>
+        <p>Berbagai layanan yang kami sediakan untuk mengelola sampah dengan lebih baik</p>
+    </section>
+
+    <!-- Layanan Section -->
+    <section class="layanan">
+        <div class="layanan-grid">
+            <div class="layanan-card slide-up">
+                <div class="layanan-icon">
+                    <i class="fas fa-trash-restore"></i>
+                </div>
+                <img src="img/setoranSampah.png" alt="Setor Sampah" class="layanan-image">
+                <h3>Setor Sampah</h3>
+                <p>Layanan penerimaan sampah dari masyarakat yang telah dipilah sesuai kategori untuk kemudian didaur ulang.</p>
+                <button class="btn-info" onclick="showInfo('setor')">Info Detail <i class="fas fa-info-circle"></i></button>
+            </div>
+            
+            <div class="layanan-card slide-up">
+                <div class="layanan-icon">
+                    <i class="fas fa-weight-scale"></i>
+                </div>
+                <img src="img/timbangSampah.png" alt="Penimbangan" class="layanan-image">
+                <h3>Penimbangan</h3>
+                <p>Proses penimbangan sampah dengan alat digital yang akurat dan transparan untuk menentukan nilai sampah.</p>
+                <button class="btn-info" onclick="showInfo('timbang')">Info Detail <i class="fas fa-info-circle"></i></button>
+            </div>
+            
+            <div class="layanan-card slide-up">
+                <div class="layanan-icon">
+                    <i class="fas fa-book-open"></i>
+                </div>
+                <img src="img/edukasi.png" alt="Edukasi Lingkungan" class="layanan-image">
+                <h3>Edukasi Lingkungan</h3>
+                <p>Program edukasi untuk masyarakat tentang pentingnya pengelolaan sampah dan cara memilah sampah dengan benar.</p>
+                <button class="btn-info" onclick="showInfo('edukasi')">Info Detail <i class="fas fa-info-circle"></i></button>
+            </div>
+            
+            <div class="layanan-card slide-up">
+                <div class="layanan-icon">
+                    <i class="fas fa-money-bill-wave"></i>
+                </div>
+                <img src="img/penukaran.png" alt="Penukaran Sampah" class="layanan-image">
+                <h3>Penukaran Sampah</h3>
+                <p>Sistem penukaran sampah dengan poin atau uang yang dapat digunakan untuk berbagai kebutuhan sehari-hari.</p>
+                <button class="btn-info" onclick="showInfo('tukar')">Info Detail <i class="fas fa-info-circle"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proses Section -->
+    <section class="proses">
+        <div class="section-header">
+            <h2>Proses Setor Sampah</h2>
+            <p>Langkah-langkah mudah menyetor sampah di bank sampah kami</p>
+        </div>
+        
+        <div class="proses-steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>Pilah Sampah</h3>
+                <p>Pisahkan sampah berdasarkan jenisnya: plastik, kertas, logam, kaca, dan organik.</p>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>Bawa ke Bank Sampah</h3>
+                <p>Bawa sampah yang telah dipilah ke lokasi bank sampah terdekat.</p>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>Timbang & Catat</h3>
+                <p>Sampah akan ditimbang dan dicatat sesuai jenis dan beratnya.</p>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">4</div>
+                <h3>Dapatkan Manfaat</h3>
+                <p>Dapatkan poin atau uang sebagai imbalan atas sampah yang disetorkan.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3><i class="fas fa-recycle"></i> Bank Sampah</h3>
+                <p>Mengelola sampah dengan bijak untuk masa depan yang lebih hijau dan berkelanjutan.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Halaman</h3>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="layanan.html">Layanan</a></li>
+                    <li><a href="kategori.html">Kategori Sampah</a></li>
+                    <li><a href="harga.html">Daftar Harga</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Kontak</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Jl. Lingkungan Hijau No. 123, Kota Bersih</p>
+                <p><i class="fas fa-phone"></i> (021) 1234-5678</p>
+                <p><i class="fas fa-envelope"></i> info@banksampah.com</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Bank Sampah - Tugas Kuliah Pemrograman Web. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
